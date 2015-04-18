@@ -1,0 +1,102 @@
+INSERT INTO GENRE values(1,'Informatique');
+INSERT INTO GENRE values(2,'Histoire');
+INSERT INTO GENRE values(3,'Science');
+INSERT INTO GENRE values(4,'Jeunesse');
+
+
+INSERT INTO LIVRE values(1,'C++ pour les null','Poirier Juteux',1,'2000-04-30','Commite du c++');
+INSERT INTO LIVRE values(2,'Java pour les null','Mon Seigneur Boileau',1,'2005-02-22','Oracle');
+INSERT INTO LIVRE values(3,'Le Web pour les null','Nicolas Chourot',1,'2008-09-10','Brioche a la canelle');
+INSERT INTO LIVRE values(4,' SQL pour les null','Melissa Bouher',1,'2015-03-10','salé salé');
+
+INSERT INTO EXEMPLAIRE values(1,1);
+INSERT INTO EXEMPLAIRE values(2,1);
+INSERT INTO EXEMPLAIRE values(3,1);
+INSERT INTO EXEMPLAIRE values(4,1);
+INSERT INTO EXEMPLAIRE values(5,2);
+INSERT INTO EXEMPLAIRE values(6,2);
+INSERT INTO EXEMPLAIRE values(7,2);
+INSERT INTO EXEMPLAIRE values(8,3);
+INSERT INTO EXEMPLAIRE values(9,3);
+INSERT INTO EXEMPLAIRE values(10,3);
+INSERT INTO EXEMPLAIRE values(11,3);
+INSERT INTO EXEMPLAIRE values(12,4);
+INSERT INTO EXEMPLAIRE values(13,4);
+INSERT INTO EXEMPLAIRE values(14,4);
+INSERT INTO EXEMPLAIRE values(15,4);
+
+INSERT INTO LIVRE values(5,'La Deuxième Guerre','Maitre of history',2,'1990-03-20','History inc');
+INSERT INTO LIVRE values(6,'Le Greque Antique','Master of grec',2,'1890-01-27','Historia Mania');
+INSERT INTO LIVRE values(7,'Hieroglyph Antique','Masta of Drawing',2,'2000-10-02','Im Drawing hiroglyph');
+INSERT INTO LIVRE values(8,'La Premire Guerre','Maitre of history',2,'1999-11-20','History inc');
+
+INSERT INTO EXEMPLAIRE values(16,5);
+INSERT INTO EXEMPLAIRE values(17,5);
+INSERT INTO EXEMPLAIRE values(18,5);
+INSERT INTO EXEMPLAIRE values(19,5);
+INSERT INTO EXEMPLAIRE values(20,6);
+INSERT INTO EXEMPLAIRE values(21,6);
+INSERT INTO EXEMPLAIRE values(22,6);
+INSERT INTO EXEMPLAIRE values(23,6);
+INSERT INTO EXEMPLAIRE values(24,7);
+INSERT INTO EXEMPLAIRE values(25,7);
+INSERT INTO EXEMPLAIRE values(26,7);
+INSERT INTO EXEMPLAIRE values(27,7);
+INSERT INTO EXEMPLAIRE values(28,7);
+INSERT INTO EXEMPLAIRE values(29,8);
+INSERT INTO EXEMPLAIRE values(30,8);
+INSERT INTO EXEMPLAIRE values(31,8);
+
+INSERT INTO LIVRE values(9,'Les Globules Contre Attaque','Globule Rouge',3,'2001-09-11','Data Center');
+INSERT INTO LIVRE values(10,'Le corps','Maitre du corp',3,'1999-11-20','Medecine inc');
+INSERT INTO LIVRE values(11,'La nature','Maitre of nature',3,'1979-04-20','Nature inc');
+INSERT INTO LIVRE values(12,'La fonte des Glaciers','Etuditateur des Glaciers',3,'2010-12-10','Glacier inc');
+
+INSERT INTO EXEMPLAIRE values(32,9);
+INSERT INTO EXEMPLAIRE values(33,9);
+INSERT INTO EXEMPLAIRE values(34,9);
+INSERT INTO EXEMPLAIRE values(35,9);
+INSERT INTO EXEMPLAIRE values(36,10);
+INSERT INTO EXEMPLAIRE values(37,10);
+INSERT INTO EXEMPLAIRE values(38,10);
+INSERT INTO EXEMPLAIRE values(39,10);
+INSERT INTO EXEMPLAIRE values(40,11);
+INSERT INTO EXEMPLAIRE values(41,11);
+INSERT INTO EXEMPLAIRE values(42,11);
+INSERT INTO EXEMPLAIRE values(43,11);
+INSERT INTO EXEMPLAIRE values(44,12);
+INSERT INTO EXEMPLAIRE values(45,12);
+INSERT INTO EXEMPLAIRE values(46,12);
+INSERT INTO EXEMPLAIRE values(47,12);
+
+INSERT INTO LIVRE values(13,'Amos daragon',' Bryan Perro',4,'2010-01-11','Scribo ');
+INSERT INTO LIVRE values(14,'Les Chevaliers Demeraude','Anne Robillard',4,'2007-09-01',' Éditions de Mortagne');
+INSERT INTO LIVRE values(15,'Pakkal','Maxime Roussy',4,'2001-09-11',' éditions des Intouchables ');
+INSERT INTO LIVRE values(16,'Harry Potter',' J. K. Rowling',4,'1997-09-30','Bloomsbury Publishing ');
+
+INSERT INTO EXEMPLAIRE values(48,13);
+INSERT INTO EXEMPLAIRE values(49,13);
+INSERT INTO EXEMPLAIRE values(50,13);
+INSERT INTO EXEMPLAIRE values(51,13);
+INSERT INTO EXEMPLAIRE values(52,13);
+INSERT INTO EXEMPLAIRE values(53,13);
+INSERT INTO EXEMPLAIRE values(54,14);
+INSERT INTO EXEMPLAIRE values(55,14);
+INSERT INTO EXEMPLAIRE values(56,14);
+INSERT INTO EXEMPLAIRE values(57,14);
+INSERT INTO EXEMPLAIRE values(58,14);
+INSERT INTO EXEMPLAIRE values(59,14);
+INSERT INTO EXEMPLAIRE values(60,15);
+INSERT INTO EXEMPLAIRE values(61,15);
+INSERT INTO EXEMPLAIRE values(62,15);
+INSERT INTO EXEMPLAIRE values(63,15);
+INSERT INTO EXEMPLAIRE values(64,15);
+INSERT INTO EXEMPLAIRE values(65,15);
+INSERT INTO EXEMPLAIRE values(66,16);
+INSERT INTO EXEMPLAIRE values(67,16);
+INSERT INTO EXEMPLAIRE values(68,16);
+INSERT INTO EXEMPLAIRE values(69,16);
+INSERT INTO EXEMPLAIRE values(70,16);
+INSERT INTO EXEMPLAIRE values(71,16);
+INSERT INTO EXEMPLAIRE values(72,16);
+INSERT INTO EXEMPLAIRE values(73,16);
