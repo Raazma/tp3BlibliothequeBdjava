@@ -1,22 +1,63 @@
 import javax.swing.*;
+import java.awt.event.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Created by Razma on 2015-04-18.
  */
 public class Recherche {
     public JPanel Recherche;
-    private JFormattedTextField formattedTextField1;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField5;
-    private JTextField textField6;
-    private JTextField textField7;
-    private JTextField textField8;
-    private JTextField textField9;
-    private JTextField textField10;
-    private JTextField textField11;
-    private JButton rechercheButton1;
-    private JButton rechercheButton;
+    private JTextField Maisont;
+    private JTextField Titret;
+    private JTextField Maisona;
+    private JTextField Genret;
+    private JTextField Datet;
+    private JTextField Ateurt;
+    private JButton RechercheTirebtn;
+    private JTextField Rtitre;
+    public ResultSet rst = null;
+    public Statement state = null;
+    Connection conn;
+
+    public Recherche(Connection conn) {
+
+       this.conn = conn;
+        RechercheTirebtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                SetResearchT();
+            }
+        });
+    }
+    private void SetResearchT(){
+        String query = "select * from livre inner join genre on livre.codegenre = genre.codegenre where Titre like '" + Rtitre.getText() + "%' or Auteur like '%" + Rtitre.getText() + "%'";
+
+        try {
+            state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            rst = state.executeQuery(query);
+            rst.next();
+            Titret.setText(rst.getString(2));
+            Ateurt.setText(rst.getString(3));
+            Genret.setText(rst.getString(8));
+            Datet.setText(rst.getString(5));
+            Maisont.setText((rst.getString(6)));
+            Rtitre.setText(rst.getString(2));
+
+        } catch (SQLException e) {
+
+        } finally {
+            try {
+                rst.close();
+                state.close();
+            } catch (SQLException e) {
+
+            }
+        }
+
+
+    }
 }
