@@ -41,18 +41,37 @@ public class ListerLivres {
         BtnSuivant.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               // try {
-                 //   SetTextBox();
-                  //  rst.next();
-                   // Titre.setText(rst.getString(2));
-                   //Auteur.setText(rst.getString(3));
-                    //Genre.setText(rst.getString(8));
-                    //Date.setText(rst.getString(5));
-                    //Edition.setText((rst.getString(6)));
+                try {
+                 //  SetTextBox();
+                    rst.next();
+                    Titre.setText(rst.getString(2));
+                   Auteur.setText(rst.getString(3));
+                    Genre.setText(rst.getString(8));
+                    Date.setText(rst.getString(5));
+                    Edition.setText((rst.getString(6)));
                     //rst.next();
-              //  }
-               // catch (SQLException u)
-               // {}
+                  //  SetTextBox();
+                }
+                catch (SQLException u)
+                {}
+            }
+        });
+        BtnPrecedent.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    //  SetTextBox();
+                    rst.previous();
+                    Titre.setText(rst.getString(2));
+                    Auteur.setText(rst.getString(3));
+                    Genre.setText(rst.getString(8));
+                    Date.setText(rst.getString(5));
+                    Edition.setText((rst.getString(6)));
+                    //rst.next();
+                    //  SetTextBox();
+                }
+                catch (SQLException u)
+                {}
             }
         });
     }
@@ -100,12 +119,12 @@ public class ListerLivres {
         } catch (SQLException e) {
 
         } finally {
-            try {
-                rst.close();
-                state.close();
-            } catch (SQLException e) {
+           // try {
+             //   rst.close();
+             //   state.close();
+           // } catch (SQLException e) {
 
-            }
+           // }
         }
 
     }
