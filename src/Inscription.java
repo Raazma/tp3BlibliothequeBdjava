@@ -25,7 +25,6 @@ public class Inscription {
                 Insert();
             }
         });
-
     }
 
     public void Insert()
@@ -35,15 +34,12 @@ public class Inscription {
         try {
             Statement StateInsert = conn.createStatement();
             StateInsert.executeUpdate(query);
-
         }
         catch (SQLException e) {
             System.out.println( e);
         }
 
-
     }
-
 
 
 

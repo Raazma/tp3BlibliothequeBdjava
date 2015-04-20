@@ -67,15 +67,21 @@ public class Menu {
                 frame.setVisible(true);
             }
         });
-        BtnGestion.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
 
-            }
-        });
 
         //Call Connection
         Connection();
+
+        BtnGestion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frame = new JFrame("Gestion");
+                frame.setContentPane(new GestionAd(conn).Gestion);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
+            }
+        });
     }
 
     public void Connection()
