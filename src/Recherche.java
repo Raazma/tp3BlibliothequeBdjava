@@ -12,7 +12,6 @@ public class Recherche {
     public JPanel Recherche;
     private JTextField Maisont;
     private JTextField Titret;
-    private JTextField Maisona;
     private JTextField Genret;
     private JTextField Datet;
     private JTextField Ateurt;
@@ -34,7 +33,7 @@ public class Recherche {
         });
     }
     private void SetResearchT(){
-        String query = "select * from livre inner join genre on livre.codegenre = genre.codegenre where Titre like '" + Rtitre.getText() + "%' or Auteur like '%" + Rtitre.getText() + "%'";
+        String query = "select * from livre inner join genre on livre.codegenre = genre.codegenre where Titre like '%" + Rtitre.getText() + "%' or Auteur like '%" + Rtitre.getText() + "%'";
 
         try {
             state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);

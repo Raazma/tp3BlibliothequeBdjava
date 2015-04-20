@@ -42,13 +42,15 @@ public class ListerLivres {
             @Override
             public void actionPerformed(ActionEvent e) {
                // try {
+                 //   SetTextBox();
+                  //  rst.next();
+                   // Titre.setText(rst.getString(2));
+                   //Auteur.setText(rst.getString(3));
+                    //Genre.setText(rst.getString(8));
+                    //Date.setText(rst.getString(5));
+                    //Edition.setText((rst.getString(6)));
                     //rst.next();
-                  //  Titre.setText(rst.getString(2));
-                 //   Auteur.setText(rst.getString(3));
-                  //  Genre.setText(rst.getString(8));
-                 //   Date.setText(rst.getString(5));
-                 //   Edition.setText((rst.getString(6)));
-               // }
+              //  }
                // catch (SQLException u)
                // {}
             }
