@@ -34,9 +34,7 @@ public class ListerLivres {
             }
         });
 
-
         SetCombobox();
-
 
         BtnSuivant.addActionListener(new ActionListener() {
             @Override
