@@ -1,4 +1,7 @@
 import javax.swing.*;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableModel;
+import java.awt.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,8 +13,7 @@ import java.sql.ResultSet;
  */
 public class ListerDesPrets {
      public JPanel Pret;
-      private JTable ListePret;
-     Connection conn;
+    Connection conn;
 
     public ListerDesPrets(Connection conn){
         this.conn = conn;
@@ -23,14 +25,36 @@ public class ListerDesPrets {
 
         Statement state = null;
         ResultSet  rst = null;
+        int rowcount = 0;
         try {
            state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
               rst = state.executeQuery(query);
-           // QueryTableModel qtm = new QueryTableModel();
-          // ListePret.setModel(DbUtils.resultSetToTableModel(rst));
-        //  ListePret.
+
+            ResultSetMetaData meta = rst.getMetaData();
+
+            while(rst.next()) rowcount++;
+
+            Object [][] rowData = new Object[meta.getColumnCount()][rowcount];
+
+            rst.isBeforeFirst();
+            while (rst.next()) {
+
+                for (int i = 0; i < rowData.length; ++i)
+                    for (int j = 0; j < rowcount; j++)
+                          rowData[i][j] = rst.getObject(i + 1);
 
 
+            }
+
+
+
+            JTable j = new JTable(rowData,new String[rowData.length]);
+          hashCode()
+
+                    j.setVisible(true);
+            j.setShowGrid(true);
+
+            Pret.add(j);
 
         } catch (SQLException e) {
 
