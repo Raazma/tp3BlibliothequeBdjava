@@ -26,7 +26,7 @@ public class Menu {
 
                 JFrame frame = new JFrame("Inscription");
                 frame.setContentPane(new Inscription(conn).Inscription);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+              //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }
@@ -38,7 +38,7 @@ public class Menu {
 
                 JFrame frame = new JFrame("Recherche");
                 frame.setContentPane(new Recherche(conn).Recherche);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+              //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
 
@@ -49,11 +49,10 @@ public class Menu {
             public void actionPerformed(ActionEvent e) {
 
                 JFrame frame = new JFrame("Pret");
-                frame.setContentPane(new ListerDesPrets().Pret);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setContentPane(new ListerDesPrets(conn).Pret);
+              //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
-
             }
         });
         BtnListeLivre.addActionListener(new ActionListener() {
@@ -62,12 +61,11 @@ public class Menu {
 
                 JFrame frame = new JFrame("Liste");
                 frame.setContentPane(new ListerLivres(conn).Liste);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+              //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }
         });
-
 
         //Call Connection
         Connection();
@@ -77,7 +75,7 @@ public class Menu {
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("Gestion");
                 frame.setContentPane(new GestionAd(conn).Gestion);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+             //   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }

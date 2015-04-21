@@ -40,12 +40,16 @@ ALTER TABLE Livre ADD CONSTRAINT Livre_PK PRIMARY KEY ( NumLivre ) ;
 CREATE
   TABLE Pret
   (
-    "NumAdherent " NUMBER (6) NOT NULL ,
+    NumAdherent  NUMBER (6) NOT NULL ,
     NumEx          NUMBER NOT NULL ,
     Debut          DATE ,
     Fin            DATE
   ) ;
-ALTER TABLE Pret ADD CONSTRAINT Pret_PK PRIMARY KEY ( "NumAdherent ", NumEx ) ;
+ALTER TABLE Pret ADD CONSTRAINT Pret_PK PRIMARY KEY ( NumAdherent , NumEx ) ;
+ALTER TABLE Pret ADD CONSTRAINT Pret_Adherent_FK FOREIGN KEY ( NumAdherent )
+REFERENCES Adherent ( NumAdherent ) ;
+commit;
+
 
 -- Error - Foreign Key Exemplaire_Exemplaire_FK has no columns
 
