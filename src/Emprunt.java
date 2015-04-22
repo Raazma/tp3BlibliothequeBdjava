@@ -112,7 +112,7 @@ public class Emprunt {
             state.executeUpdate(query);
 
         } catch (SQLException e) {
-          
+
         }
     }
 
