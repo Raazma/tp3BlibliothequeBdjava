@@ -18,6 +18,8 @@ public class Recherche {
     private JButton RechercheTirebtn;
     private JTextField Rtitre;
     private JLabel NumLivre;
+    private JButton Precedent;
+    private JButton Suivant;
     public ResultSet rst = null;
     public Statement state = null;
     Connection conn;
@@ -32,7 +34,42 @@ public class Recherche {
                 SetResearchT();
             }
         });
+        Suivant.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    rst.next();
+                    NumLivre.setText(Integer.toString(rst.getInt(1)));
+                    Titret.setText(rst.getString(2));
+                    Ateurt.setText(rst.getString(3));
+                    Genret.setText(rst.getString(8));
+                    Datet.setText(rst.getString(5));
+                    Maisont.setText((rst.getString(6)));
+                    Rtitre.setText(rst.getString(2));
+                }
+                catch (SQLException u){}
+            }
+        });
+        Precedent.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    rst.previous();
+                    NumLivre.setText(Integer.toString(rst.getInt(1)));
+                    Titret.setText(rst.getString(2));
+                    Ateurt.setText(rst.getString(3));
+                    Genret.setText(rst.getString(8));
+                    Datet.setText(rst.getString(5));
+                    Maisont.setText((rst.getString(6)));
+                    Rtitre.setText(rst.getString(2));
+                }
+                catch (SQLException u){}
+            }
+        });
     }
+
+
+
     private void SetResearchT(){
         String query = "select * from livre inner join genre on livre.codegenre = genre.codegenre where Titre like '%" + Rtitre.getText() + "%' or Auteur like '%" + Rtitre.getText() + "%'";
 
@@ -51,12 +88,12 @@ public class Recherche {
         } catch (SQLException e) {
 
         } finally {
-            try {
-                rst.close();
-                state.close();
-            } catch (SQLException e) {
+           // try {
+              //  rst.close();
+              //  state.close();
+         //   } catch (SQLException e) {
 
-            }
+           // }
         }
 
 

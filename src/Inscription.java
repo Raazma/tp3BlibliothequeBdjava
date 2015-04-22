@@ -22,7 +22,17 @@ public class Inscription {
         enregistrerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Insert();
+                if(Validation()) {
+                    Insert();
+                    ClearBox();
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(Inscription, "Veuiller rentrer tous les champs Svp", "Attention!", JOptionPane.WARNING_MESSAGE);
+
+                }
+
+
             }
         });
     }
@@ -38,5 +48,24 @@ public class Inscription {
         catch (SQLException e) {
             System.out.println( e);
         }
+    }
+
+    private boolean Validation(){
+
+        if(!Name.getText().trim().isEmpty() && !Prenom.getText().trim().isEmpty() &&! Add.getText().trim().isEmpty() && !Tel.getText().trim().isEmpty())
+            return true;
+        else
+            return false;
+
+
+    }
+
+    private void ClearBox(){
+
+        Name.setText("");
+        Prenom.setText("");
+        Add.setText("");
+        Tel.setText("");
+
     }
 }

@@ -58,40 +58,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestionAd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GestionAd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1921">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Emprunt.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Emprunt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2465">
-              <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2669">
+              <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#530#683#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#719#874#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#477#630#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#666#1055#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListerLivres.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ListerLivres.java">
+      <file leaf-file-name="Inscription.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Inscription.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestionAd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GestionAd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
-              <caret line="110" column="52" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2193">
+              <caret line="78" column="39" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,37 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inscription.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Inscription.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="731">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListerDesPrets.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ListerDesPrets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recherche.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Recherche.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="1139">
-              <caret line="42" column="62" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="Emprunt.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Emprunt.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -141,6 +109,36 @@
         <entry file="file://$PROJECT_DIR$/src/Recherche.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recherche.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Recherche.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="1768">
+              <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#964#1599#0" expanded="true" />
+                <element signature="e#1598#1599#0" expanded="true" />
+                <element signature="e#1638#2277#0" expanded="true" />
+                <element signature="e#2276#2277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Inscription.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Inscription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1309">
+              <caret line="30" column="146" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="146" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#570#1017#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -158,17 +156,17 @@
         <option value="$PROJECT_DIR$/src/Inscription.form" />
         <option value="$PROJECT_DIR$/src/GestionAd.form" />
         <option value="$PROJECT_DIR$/src/ListerDesPrets.form" />
+        <option value="$PROJECT_DIR$/src/ListerDesPrets.java" />
+        <option value="$PROJECT_DIR$/src/ListerLivres.java" />
+        <option value="$PROJECT_DIR$/src/Menu.java" />
+        <option value="$PROJECT_DIR$/src/ListerLivres.form" />
         <option value="$PROJECT_DIR$/src/Emprunt.form" />
         <option value="$PROJECT_DIR$/src/Inscription.java" />
-        <option value="$PROJECT_DIR$/src/ListerDesPrets.java" />
+        <option value="$PROJECT_DIR$/src/GestionAd.java" />
         <option value="$PROJECT_DIR$/src/Recherche.form" />
         <option value="$PROJECT_DIR$/src/Recherche.java" />
-        <option value="$PROJECT_DIR$/src/ListerLivres.form" />
-        <option value="$PROJECT_DIR$/src/GestionAd.java" />
-        <option value="$PROJECT_DIR$/src/ListerLivres.java" />
-        <option value="$PROJECT_DIR$/src/Emprunt.java" />
-        <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/Menu.form" />
+        <option value="$PROJECT_DIR$/src/Emprunt.java" />
       </list>
     </option>
   </component>
@@ -290,10 +288,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ListerDesPrets" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -347,20 +341,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Emprunt" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp3BlibliothequeBdjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp3BlibliothequeBdjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -667,7 +647,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Emprunt.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -759,6 +747,8 @@
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#570#1017#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -841,6 +831,8 @@
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#570#1017#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,6 +922,8 @@
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#570#1017#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -986,11 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Inscription.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ListerDesPrets.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1004,20 +993,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Emprunt.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recherche.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recherche.java">
+    <entry file="file://$PROJECT_DIR$/src/ListerLivres.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="1139">
-          <caret line="42" column="62" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
+          <caret line="110" column="52" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1037,44 +1016,65 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Inscription.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GestionAd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1921">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2193">
+          <caret line="78" column="39" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Inscription.java">
+    <entry file="file://$PROJECT_DIR$/src/Recherche.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Recherche.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="731">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="1768">
+          <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#964#1599#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1638#2277#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListerLivres.java">
+    <entry file="file://$PROJECT_DIR$/src/Emprunt.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Inscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
-          <caret line="110" column="52" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1309">
+          <caret line="30" column="146" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="146" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#570#1017#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Emprunt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2465">
-          <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2669">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#530#683#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#719#874#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#477#630#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#666#1055#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
           </folding>
         </state>
       </provider>

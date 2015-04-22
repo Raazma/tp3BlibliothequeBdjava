@@ -9,12 +9,10 @@ import java.sql.*;
  */
 public class Emprunt {
     public JPanel Emprunt;
-     private JList list1;
     private JTextField AdBox;
     private JTextField NumBox;
     private JComboBox CbExDispo;
     private JButton BtnEmp;
-    private JList PretAct;
     private JButton Dispo;
     Connection conn;
 
@@ -31,7 +29,13 @@ public class Emprunt {
         BtnEmp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(Validation())
                 InsertPret();
+                else
+                {
+
+                    JOptionPane.showMessageDialog(Emprunt, "Veuiller rentrer tous les champs Svp", "Attention!", JOptionPane.WARNING_MESSAGE);
+                }
             }
         });
         ListePret();
@@ -134,6 +138,14 @@ public class Emprunt {
 
 
         }
+
+    }
+
+    private boolean Validation(){
+        if(!NumBox.getText().trim().isEmpty() && !AdBox.getText().trim().isEmpty() && CbExDispo.getSelectedIndex() != -1)
+        return true;
+        else return false;
+
 
     }
 }

@@ -68,8 +68,16 @@ public class GestionAd {
         Modifier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Update();
-                SelectAllEmploye();
+                if(Validation()) {
+                    Update();
+                    SelectAllEmploye();
+                }
+                else
+                {
+
+                    JOptionPane.showMessageDialog(Gestion, "Veuiller rentrer tous les champs Svp", "Attention!", JOptionPane.WARNING_MESSAGE);
+                    SelectAllEmploye();
+                }
             }
         });
     }
@@ -120,6 +128,14 @@ public class GestionAd {
         catch (SQLException e) {
             System.out.println( e);
         }
+    }
+
+    private boolean Validation(){
+
+      if(!NomBox.getText().trim().isEmpty()&& !PrenomBox.getText().trim().isEmpty() && !AdresseBox.getText().trim().isEmpty()&& !TelephoneBox.getText().trim().isEmpty())
+          return true;
+          else
+          return false;
     }
 
 }
