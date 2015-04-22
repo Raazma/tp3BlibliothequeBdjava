@@ -17,20 +17,18 @@ public class ListerLivres {
     private JButton BtnPrecedent;
     private JButton BtnSuivant;
     private JComboBox GenreB;
+    private JLabel Num;
     public Connection conn;
    public ResultSet rst = null;
   public  Statement state = null;
     public ListerLivres(Connection conn) {
         this.conn = conn;
 
-
         GenreB.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-
                 //System.out.print( GenreB.getSelectedItem().toString());
                 SetTextBox();
-
             }
         });
 
@@ -42,6 +40,7 @@ public class ListerLivres {
                 try {
                  //  SetTextBox();
                     rst.next();
+                    Num.setText(Integer.toString(rst.getInt(1)));
                     Titre.setText(rst.getString(2));
                    Auteur.setText(rst.getString(3));
                     Genre.setText(rst.getString(8));
@@ -58,22 +57,22 @@ public class ListerLivres {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    //  SetTextBox();
+                    // SetTextBox();
                     rst.previous();
+                    Num.setText(Integer.toString(rst.getInt(1)));
                     Titre.setText(rst.getString(2));
                     Auteur.setText(rst.getString(3));
                     Genre.setText(rst.getString(8));
                     Date.setText(rst.getString(5));
                     Edition.setText((rst.getString(6)));
                     //rst.next();
-                    //  SetTextBox();
+                   // SetTextBox();
                 }
                 catch (SQLException u)
                 {}
             }
         });
     }
-
     private void SetCombobox() {
         ResultSet rst = null;
         Statement state = null;
@@ -96,18 +95,15 @@ public class ListerLivres {
         }
     }
 
-
-
     private void SetTextBox() {
 
         String query = "select * from livre inner join genre on livre.codegenre = genre.codegenre where genre.description = '" + GenreB.getSelectedItem().toString() + "'";
-
-
 
         try {
             state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             rst = state.executeQuery(query);
                rst.next();
+                  Num.setText(Integer.toString(rst.getInt(1)));
                 Titre.setText(rst.getString(2));
                 Auteur.setText(rst.getString(3));
                 Genre.setText(rst.getString(8));

@@ -73,8 +73,6 @@ public class GestionAd {
             }
         });
     }
-
-
    private void Delete(){
 
          String query = "delete from Adherent where NumAdherent = " + NumAd.getText();

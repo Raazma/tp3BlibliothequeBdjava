@@ -17,6 +17,7 @@ public class Recherche {
     private JTextField Ateurt;
     private JButton RechercheTirebtn;
     private JTextField Rtitre;
+    private JLabel NumLivre;
     public ResultSet rst = null;
     public Statement state = null;
     Connection conn;
@@ -39,6 +40,7 @@ public class Recherche {
             state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             rst = state.executeQuery(query);
             rst.next();
+            NumLivre.setText(Integer.toString(rst.getInt(1)));
             Titret.setText(rst.getString(2));
             Ateurt.setText(rst.getString(3));
             Genret.setText(rst.getString(8));

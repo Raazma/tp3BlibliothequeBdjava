@@ -65,7 +65,6 @@ public class Emprunt {
                 state.close();
             } catch (SQLException e) {
 
-
             }
         }
        return num;
@@ -76,7 +75,7 @@ public class Emprunt {
         ResultSet rst = null;
         Statement state= null;
         CbExDispo.removeAllItems();
-        String query = "SELECT exemplaire.NUMEX FROM EXEMPLAIRE left JOIN pret on pret.numex = exemplaire.numex where Pret.numex not in (select numex from pret where Fin > '2015-04-21') and NumLivre = " +NumBox.getText();
+        String query = "SELECT exemplaire.NUMEX FROM EXEMPLAIRE left JOIN pret on pret.numex = exemplaire.numex where Pret.numex not in (select numex from pret where Fin > ( select SYSdate from dual)) and NumLivre = " +NumBox.getText();
 
         try {
             state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
