@@ -48,10 +48,10 @@ public class Menu {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                JFrame frame = new JFrame("Pret");
-                frame.setContentPane(new ListerDesPrets(conn).Pret);
-              //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.pack();
+                JFrame frame = new JFrame("Emprunt");
+                frame.setContentPane(new Emprunt(conn).Emprunt);
+                        //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        frame.pack();
                 frame.setVisible(true);
             }
         });

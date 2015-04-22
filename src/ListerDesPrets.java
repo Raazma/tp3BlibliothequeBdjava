@@ -17,12 +17,13 @@ public class ListerDesPrets {
 
     public ListerDesPrets(Connection conn){
         this.conn = conn;
+        SelectAllPret();
     }
 
     public void SelectAllPret(){
 
-        String query = "select * from pret inner join Adherent on Adherent.NUMADHERENT = pret.NumAdherent  Inner join exemplaire on exemplaire.numex = pret.numex inner join livre on livre.NUMLIVRE = exemplaire.numlivre" ;
-
+       // String query = "select * from pret inner join Adherent on Adherent.NUMADHERENT = pret.NumAdherent  Inner join exemplaire on exemplaire.numex = pret.numex inner join livre on livre.NUMLIVRE = exemplaire.numlivre" ;
+       String query = "select * from adherent";
         Statement state = null;
         ResultSet  rst = null;
         int rowcount = 0;
@@ -34,27 +35,28 @@ public class ListerDesPrets {
 
             while(rst.next()) rowcount++;
 
-            Object [][] rowData = new Object[meta.getColumnCount()][rowcount];
+         Object [][] rowData = new Object[3][3];
+
 
             rst.isBeforeFirst();
             while (rst.next()) {
 
                 for (int i = 0; i < rowData.length; ++i)
-                    for (int j = 0; j < rowcount; j++)
+                   for (int j = 0; j < rowcount; j++)
                           rowData[i][j] = rst.getObject(i + 1);
 
 
             }
 
+          String[] p =  new String[rowData.length];
+            p[0] = "FF";
 
 
-            JTable j = new JTable(rowData,new String[rowData.length]);
-          hashCode()
+            JTable j = new JTable(rowData,p);
 
-                    j.setVisible(true);
-            j.setShowGrid(true);
+          JScrollPane pan = new JScrollPane(j);
 
-            Pret.add(j);
+            Pret.add(pan);
 
         } catch (SQLException e) {
 
