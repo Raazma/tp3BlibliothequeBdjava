@@ -86,10 +86,10 @@ public class Emprunt {
 
 
         } catch (SQLException e) {
-            System.out.println(e);
+
         }
         catch (NullPointerException e) {
-            System.out.println(e);
+
 
         }finally {
             try {
@@ -112,7 +112,7 @@ public class Emprunt {
             state.executeUpdate(query);
 
         } catch (SQLException e) {
-           System.out.print(e);
+          
         }
     }
 
