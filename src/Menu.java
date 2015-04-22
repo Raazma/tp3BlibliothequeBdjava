@@ -84,7 +84,7 @@ public class Menu {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-
+                MakePretTable();
             }
         });
     }
@@ -120,15 +120,49 @@ public class Menu {
 
     private void MakePretTable(){
         Vector rows = new Vector();
-        String query = "Select * from Livre";
-       // try {
-           // Statement state = conn.prepareStatement(query);
-           // ResultSet rst = state.ex
-      //  }
-       // catch (SQLException e){
+        System.out.println("fired");
+     String query = " SELECT livre.titre, genre.description, pret.debut, pret.fin ,adherent.nom, adherent.prenom  FROM EXEMPLAIRE " +
+       " inner join livre on livre.numlivre = exemplaire.numlivre " +
+        " inner join pret on pret.numex = Exemplaire.numex " +
+        " inner join adherent on adherent.NUMADHERENT = pret.NUMADHERENT " +
+       " inner join genre on genre.CODEGENRE = livre.codegenre " +
+       " WHERE (exemplaire.NUMLIVRE =2 AND exemplaire.numex  IN (SELECT NUMEX FROM PRET WHERE FIN >(SELECT SYSDATE FROM DUAL)))";
 
-       // }
+        try {
+            Statement state = conn.createStatement();
+            ResultSet rst = state.executeQuery(query);
 
+            while(rst.next()){
+                Vector line = new Vector();
+                line.add(rst.getString(1));
+                line.add(rst.getString(2));
+                line.add(rst.getString(3));
+                line.add(rst.getString(4));
+                line.add(rst.getString(5));
+                line.add(rst.getString(6));
+                rows.add(line);
+            }
+            Vector headers = new Vector();
+            headers.add("Titre");
+            headers.add("Genre");
+            headers.add("Debut");
+            headers.add("Fin");
+            headers.add("Prenom");
+            headers.add("Nom");
+
+            JTable tabDonnees = new JTable(rows,headers);
+            JScrollPane  JScrollPane1 = new JScrollPane(tabDonnees);
+            JScrollPane1.setViewportView(tabDonnees);
+            JFrame frameemp = new JFrame("Emprunts");
+
+            frameemp.getContentPane().add(JScrollPane1);
+            frameemp.setVisible(true);
+            frameemp.setSize(500,500);
+            JScrollPane1.validate();
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
 
 
 
