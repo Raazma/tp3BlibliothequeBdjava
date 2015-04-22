@@ -28,12 +28,10 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2737">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2992">
               <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2865#3024#0" expanded="true" />
-                <element signature="e#3023#3024#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +88,8 @@
       <file leaf-file-name="Emprunt.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Emprunt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0" vertical-offset="632" max-vertical-offset="2312">
-              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.5533662" vertical-offset="1380" max-vertical-offset="2295">
+              <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,7 +180,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,6 +309,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -690,8 +688,6 @@
           <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2865#3024#0" expanded="true" />
-            <element signature="e#3023#3024#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,8 +756,6 @@
           <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2865#3024#0" expanded="true" />
-            <element signature="e#3023#3024#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -837,8 +831,6 @@
           <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2865#3024#0" expanded="true" />
-            <element signature="e#3023#3024#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -964,8 +956,6 @@
           <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2865#3024#0" expanded="true" />
-            <element signature="e#3023#3024#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -992,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Emprunt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0" vertical-offset="632" max-vertical-offset="2312">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.5533662" vertical-offset="1380" max-vertical-offset="2295">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

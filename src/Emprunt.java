@@ -102,7 +102,7 @@ public class Emprunt {
 
     private void InsertPret(){
 
-        String query = "Insert into Pret values(" + SelectNumAd() +"," +CbExDispo.getSelectedItem().toString()+","+"'(Select Sysdate from dual)','(Select Sysdate + 30 from dual )')";
+        String query = "Insert into Pret values(" + SelectNumAd() +"," +CbExDispo.getSelectedItem().toString()+","+"(Select Sysdate from dual),(Select Sysdate + 14 from dual))";
         try {
             Statement state = conn.createStatement();
             state.executeUpdate(query);
@@ -128,8 +128,7 @@ public class Emprunt {
                Data[i] = rst.getString(1);
                Data[i] = Integer.toString(rst.getInt(2));
             }
-           //retAct.setListData(Data);
-          //  PretAct.
+
         }
         catch (SQLException e){
 
