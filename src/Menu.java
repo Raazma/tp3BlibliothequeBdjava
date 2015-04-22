@@ -1,10 +1,11 @@
 import javax.swing.*;
+import javax.swing.plaf.nimbus.State;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 import oracle.jdbc.driver.*;
 import oracle.jdbc.pool.*;
-
+import java.util.Vector;
 /**
  * Created by Razma on 2015-04-18.
  */
@@ -79,7 +80,17 @@ public class Menu {
                 frame.setVisible(true);
             }
         });
+        BtnMustEmprunt.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+        });
     }
+
+
+
     public void Connection()
     {
         String user ="Paquette";
@@ -104,6 +115,22 @@ public class Menu {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
+    }
+
+    private void MakePretTable(){
+        Vector rows = new Vector();
+        String query = "Select * from Livre";
+       // try {
+           // Statement state = conn.prepareStatement(query);
+           // ResultSet rst = state.ex
+      //  }
+       // catch (SQLException e){
+
+       // }
+
+
+
 
     }
 }

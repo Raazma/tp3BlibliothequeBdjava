@@ -1,10 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 
 /**
@@ -17,7 +14,7 @@ public class Emprunt {
     private JTextField NumBox;
     private JComboBox CbExDispo;
     private JButton BtnEmp;
-    private JList list2;
+    private JList PretAct;
     private JButton Dispo;
     Connection conn;
 
@@ -37,6 +34,7 @@ public class Emprunt {
                 InsertPret();
             }
         });
+        ListePret();
     }
     private int SelectNumAd(){
          ResultSet rst = null;
@@ -75,7 +73,7 @@ public class Emprunt {
         ResultSet rst = null;
         Statement state= null;
         CbExDispo.removeAllItems();
-        String query = "SELECT exemplaire.NUMEX FROM EXEMPLAIRE left JOIN pret on pret.numex = exemplaire.numex where Pret.numex not in (select numex from pret where Fin > ( select SYSdate from dual)) and NumLivre = " +NumBox.getText();
+        String query = "SELECT NumEx FROM EXEMPLAIRE WHERE (NUMLIVRE = "+NumBox.getText()+" AND numex NOT IN (SELECT NUMEX FROM PRET WHERE FIN >(SELECT SYSDATE FROM DUAL)))";
 
         try {
             state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
@@ -84,10 +82,10 @@ public class Emprunt {
 
 
         } catch (SQLException e) {
-            System.out.println("Numero de livre invalide...");
+            System.out.println(e);
         }
         catch (NullPointerException e) {
-            System.out.println("Numero de livre invalide...");
+            System.out.println(e);
 
         }finally {
             try {
@@ -112,8 +110,31 @@ public class Emprunt {
         } catch (SQLException e) {
            System.out.print(e);
         }
-
-
     }
 
+    private void ListePret()
+    {
+        DefaultListModel mod = new DefaultListModel();
+        String query = "SELECT * FROM EXEMPLAIRE WHERE (NUMLIVRE ="+NumBox.getText()+"+ AND numex NOT IN (SELECT NUMEX FROM PRET WHERE FIN >(SELECT SYSDATE FROM DUAL)))";
+
+        try {
+            Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            ResultSet rst = state.executeQuery(query);
+             ResultSetMetaData meta = rst.getMetaData();
+            String[] Data = new String[meta.getColumnCount()];
+            int i = 0;
+            while(rst.next()){
+
+               Data[i] = rst.getString(1);
+               Data[i] = Integer.toString(rst.getInt(2));
+            }
+           //retAct.setListData(Data);
+          //  PretAct.
+        }
+        catch (SQLException e){
+
+
+        }
+
+    }
 }
