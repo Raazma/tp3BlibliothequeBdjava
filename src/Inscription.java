@@ -38,9 +38,5 @@ public class Inscription {
         catch (SQLException e) {
             System.out.println( e);
         }
-
     }
-
-
-
 }

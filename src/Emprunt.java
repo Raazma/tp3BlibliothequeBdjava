@@ -31,8 +31,13 @@ public class Emprunt {
                 SetDispo();
             }
         });
+        BtnEmp.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                InsertPret();
+            }
+        });
     }
-
     private int SelectNumAd(){
          ResultSet rst = null;
         Statement state= null;
@@ -47,11 +52,11 @@ public class Emprunt {
 
 
         } catch (SQLException e) {
-            System.out.println("Numero de livre invalide...");
+        //    System.out.println("Numero de livre invalide...");
 
         }
         catch (NullPointerException e) {
-            System.out.println("Numero de livre invalide...");
+           // System.out.println("Numero de livre invalide...");
 
         }
         finally {
@@ -66,8 +71,7 @@ public class Emprunt {
        return num;
     }
 
-    private void SetDispo()
-    {
+    private void SetDispo() {
 
         ResultSet rst = null;
         Statement state= null;
@@ -97,6 +101,20 @@ public class Emprunt {
 
             }
         }
+    }
+
+    private void InsertPret(){
+
+        String query = "Insert into Pret values(" + SelectNumAd() +"," +CbExDispo.getSelectedItem().toString()+","+"'2015-04-21','2015-05-21')";
+        try {
+            Statement state = conn.createStatement();
+            state.executeUpdate(query);
+
+        } catch (SQLException e) {
+           System.out.print(e);
+        }
+
+
     }
 
 }

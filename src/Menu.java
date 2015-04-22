@@ -35,7 +35,6 @@ public class Menu {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-
                 JFrame frame = new JFrame("Recherche");
                 frame.setContentPane(new Recherche(conn).Recherche);
               //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -81,7 +80,6 @@ public class Menu {
             }
         });
     }
-
     public void Connection()
     {
         String user ="Paquette";

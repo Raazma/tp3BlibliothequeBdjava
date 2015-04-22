@@ -85,12 +85,9 @@ public class GestionAd {
        catch (SQLException e) {
            System.out.println( e);
        }
-
    }
 
-
     private void SelectAllEmploye() {
-
 
         String query = "select * from Adherent";
 
@@ -125,7 +122,6 @@ public class GestionAd {
         catch (SQLException e) {
             System.out.println( e);
         }
-
     }
 
 }

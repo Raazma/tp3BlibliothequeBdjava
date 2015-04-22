@@ -27,6 +27,7 @@ public class ListerDesPrets {
         Statement state = null;
         ResultSet  rst = null;
         int rowcount = 0;
+
         try {
            state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
               rst = state.executeQuery(query);
@@ -44,8 +45,6 @@ public class ListerDesPrets {
                 for (int i = 0; i < rowData.length; ++i)
                    for (int j = 0; j < rowcount; j++)
                           rowData[i][j] = rst.getObject(i + 1);
-
-
             }
 
           String[] p =  new String[rowData.length];
