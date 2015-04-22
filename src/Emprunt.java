@@ -102,7 +102,7 @@ public class Emprunt {
 
     private void InsertPret(){
 
-        String query = "Insert into Pret values(" + SelectNumAd() +"," +CbExDispo.getSelectedItem().toString()+","+"'2015-04-21','2015-05-21')";
+        String query = "Insert into Pret values(" + SelectNumAd() +"," +CbExDispo.getSelectedItem().toString()+","+"'(Select Sysdate from dual)','(Select Sysdate + 30 from dual )')";
         try {
             Statement state = conn.createStatement();
             state.executeUpdate(query);
